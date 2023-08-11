@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   {{>header}}
+  </head>
+  <body>
+     <div class="container">
+      <div class="box form-box">
+      <h2>Create Account</h2>
+    <form action="/register" method="POST">
+      <div class="field input">
+        <label for="name" >Username
+           <input
+          type="text"
+          name="name" 
+          autocomplete="off"
+          placeholder="Enter Username"
+          required 
+  
+        
+        />
+        </label>
+       
+      </div>
+      <div class="field input">
+        <label for="email" >Email
+           <input
+          type="email"
+          name="email" 
+          autocomplete="off"
+          placeholder="Enter your email"
+          required
+        />
+        </label>
+       
+      </div>
+      <div class="field input">
+        <label for="Password" >Password
+           <input
+          type="password"
+          name="password"
+          autocomplete="off"
+          placeholder="Enter your password"
+          required
+        />
+        </label>
+      </div>
+      <div class="field input">
+        <label for="confirm" >Confirm Password
+           <input
+          type="password"
+          name="confirmpassword"
+          autocomplete="off"
+          placeholder="Enter your password"
+          required
+        />
+        </label> 
+        </div>
+     
+      <div class="field">
+        <input type="submit" class="btn" value="Register">
+      </div> 
+      <div class="link">
+      <span>Already have an account <a href="login">Login</a></span>
+    </div>
+    </form>
+     </div>
+    </div>
+    
+    
+  </body>
+</html>
